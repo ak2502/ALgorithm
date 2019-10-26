@@ -100,3 +100,26 @@ index    0   1   2   3    4    5    6    7    8    9   10  11   12
  Array[start] : 34 which is  equal to key.
  Hence, key is found at index : 5
 */
+
+##linear search
+int i;
+int linearsearch(int values[],int t,int n)
+{
+    for(i=0;i<n;i++)
+    {
+        if (values[i] == t) 
+        {       
+            return i; 
+        }
+    }
+    return 0;
+}
+
+/* OUTPUT
+Input: values[] = {5, 34, 65, 12, 77, 35}
+t=77
+Output:4
+Input: values[] = {101, 392, 1, 54, 32, 22, 90, 93}
+t=200
+Output: 0 (not found)
+*/
